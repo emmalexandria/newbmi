@@ -24,7 +24,7 @@
   <p class="font-bold mb-1">
     <slot/>
   </p>
-  <div class="border w-fit flex flex-row items-center rounded-md bg-white shadow-sm px-2">
+  <div class="border w-fit flex flex-row items-center rounded-md bg-white shadow-sm px-2 py-1">
     <input type="numeric" {name} bind:value={inputValue} on:input={setValue} class="min-w-4 h-8 w-fit text-sm outline-none bg-transparent">
     <select bind:value={selectValue} on:change={setValue} class="bg-transparent outline-none">
       <option>{defaultUnit}</option>
