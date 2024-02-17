@@ -18,6 +18,11 @@
     $: weight, height, updateBMI();
 </script>
 
+<title>New BMI Calculator</title>
+<svelte:head>
+    <meta name="description" content="A simple calculator for classic and new BMI">
+</svelte:head>
+
 <main class="md:w-1/2 lg:w-1/3 mx-auto flex flex-col font-inter p-8">
     <h1 class="text-5xl font-bold mb-2">New BMI Calculator</h1>
     <hr class="mb-4">
@@ -46,7 +51,7 @@
     
     </div>
 
-    <h2 class="text-3xl font-bold mb-2">About new BMI</h2>
+    <h2 class="text-3xl font-bold mb-2 mt-4">About new BMI</h2>
     <hr class="mb-4">
     <p class="mb-2">New BMI was created by Oxford professor Nick Trefethen to address the fact that BMI biases tall people towards being overweight and short people towards
         being underweight on the BMI scale. </p>
