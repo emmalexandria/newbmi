@@ -24,6 +24,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource-variable/inter": "^5.0.16",
 		"@sveltejs/adapter-static": "^3.0.1"
 	}
 }

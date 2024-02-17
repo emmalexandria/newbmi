@@ -19,22 +19,14 @@
     }
   }
 
-
-  $: inputValue, () => {
-    
-  }
-
-
-
-
 </script>
-<label class="block">
-  <p class="font-bold">
+<label class="block mb-4">
+  <p class="font-bold mb-1">
     <slot/>
   </p>
-  <div>
-    <input type="number" {name} bind:value={inputValue} on:input={setValue} class="min-w-4 w-fit border rounded-md text-sm px-2 py-1 outline-none">
-    <select bind:value={selectValue} on:change={setValue} class="">
+  <div class="border w-fit flex flex-row items-center rounded-md bg-white shadow-sm px-2 py-1">
+    <input type="numeric" {name} bind:value={inputValue} on:input={setValue} class="min-w-4 h-8 w-fit text-sm outline-none bg-transparent">
+    <select bind:value={selectValue} on:change={setValue} class="bg-transparent outline-none">
       <option>{defaultUnit}</option>
       <option>{alternate}</option>
     </select>
